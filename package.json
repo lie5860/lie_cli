@@ -1,8 +1,11 @@
 {
   "name": "lie_cli",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "cli_study",
   "main": "index.js",
+  "bin": {
+    "lie-cli": "./bin/lie-cli.js"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
