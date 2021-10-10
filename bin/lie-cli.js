@@ -8,8 +8,6 @@ commander.version(require("../package.json").version);
 commander
   .command("init <project-name>")
   .description("初始化项目")
-  .action((name) => {
-    console.log("name",name);
-  });
+  .action(require("../lib/init"));
 //   解析用户输入 必须要加 不然上面的定义都不会被触发
 commander.parse(process.argv);
